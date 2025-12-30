@@ -48,7 +48,7 @@ add_action('after_setup_theme', 'devrix_setup');
  * Enqueue scripts and styles
  */
 function devrix_scripts() {
-    // Enqueue theme stylesheet
+    // Enqueue theme stylesheet (WordPress requires style.css in root)
     wp_enqueue_style(
         'devrix-style',
         get_stylesheet_uri(),
@@ -56,12 +56,20 @@ function devrix_scripts() {
         filemtime(get_template_directory() . '/style.css')
     );
     
-    // Enqueue JavaScript
+    // Enqueue compiled CSS from Vite
+    wp_enqueue_style(
+        'devrix-main',
+        get_template_directory_uri() . '/assets/dist/css/main.css',
+        array('devrix-style'),
+        filemtime(get_template_directory() . '/assets/dist/css/main.css')
+    );
+    
+    // Enqueue JavaScript from Vite
     wp_enqueue_script(
         'devrix-scripts',
-        get_template_directory_uri() . '/assets/js/scripts.js',
+        get_template_directory_uri() . '/assets/dist/js/bundle.js',
         array(),
-        filemtime(get_template_directory() . '/assets/js/scripts.js'),
+        filemtime(get_template_directory() . '/assets/dist/js/bundle.js'),
         true
     );
     

@@ -1,0 +1,37 @@
+{
+  "name": "devrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "watch": "vite",
+    "build": "vite build",
+    "lint:sass": "stylelint \"assets/src/sass/**/*.scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgedivery/onboarding-build-vite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/georgedivery/onboarding-build-vite/issues"
+  },
+  "homepage": "https://github.com/georgedivery/onboarding-build-vite#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "sass": "^1.97.1",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-scss": "^6.14.0",
+    "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}
