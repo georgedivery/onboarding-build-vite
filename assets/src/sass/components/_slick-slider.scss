@@ -1,3 +1,17 @@
-.slick-slider .slide { padding: 0 20px; }
-.slick-slider .image { padding-bottom: 50%; background: rgb(127, 104, 127); }
-.slick-slider p {  }
+// slick-slider styles
+.slick-slider {
+  .slide {
+    padding: 0 20px;
+  }
+
+  .image {
+    padding-bottom: 50%;
+    background: rgb(127, 104, 127);
+  }
+}
+
+
+// Override slick-loading background to avoid 404 errors for ajax-loader.gif
+.slick-loading .slick-list {
+  background: transparent !important;
+}

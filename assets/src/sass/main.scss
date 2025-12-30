@@ -1,7 +1,6 @@
-@use 'vendors/slick';
 @use 'reset';
 @use 'base';
-@use 'components/slick-slider'; // без _ и без .scss
+@use 'components/slick-slider';
 
 // Main styles
 .site-content {

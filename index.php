@@ -53,6 +53,20 @@ get_header();
 
                 </div>
             </div>
+
+            <div class="slide">
+                <div class="slide-inner">
+
+                    <div class="image"></div>
+
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quo, consectetur deserunt
+                        cupiditate a sint ad porro vitae consequatur, magni velit. Harum cumque cum corporis rerum sed
+                        aliquid, eaque dolorem.
+                    </p>
+
+                </div>
+            </div>
         </div>
 
         <?php if (have_posts()) : ?>

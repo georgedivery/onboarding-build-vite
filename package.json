@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "watch": "vite",
+    "dev": "vite build --watch",
+    "watch": "vite build --watch",
     "build": "vite build",
     "lint:sass": "stylelint \"assets/src/sass/**/*.scss\""
   },

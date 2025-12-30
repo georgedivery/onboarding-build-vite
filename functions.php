@@ -64,11 +64,23 @@ function devrix_scripts() {
         filemtime(get_template_directory() . '/assets/dist/css/main.css')
     );
     
+    // Enqueue jQuery (required for slick-carousel)
+    wp_enqueue_script('jquery');
+    
+    // Enqueue slick-carousel (requires jQuery)
+    wp_enqueue_script(
+        'slick-carousel',
+        get_template_directory_uri() . '/assets/js/slick.min.js',
+        array('jquery'),
+        '1.8.1',
+        true
+    );
+    
     // Enqueue JavaScript from Vite
     wp_enqueue_script(
         'devrix-scripts',
         get_template_directory_uri() . '/assets/dist/js/bundle.js',
-        array(),
+        array('jquery', 'slick-carousel'),
         filemtime(get_template_directory() . '/assets/dist/js/bundle.js'),
         true
     );
