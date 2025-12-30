@@ -64,10 +64,10 @@ function devrix_scripts() {
         filemtime(get_template_directory() . '/assets/dist/css/main.css')
     );
     
-    // Enqueue jQuery (required for slick-carousel)
+    // Enqueue jQuery
     wp_enqueue_script('jquery');
     
-    // Enqueue slick-carousel (requires jQuery)
+    // Enqueue slick-carousel
     wp_enqueue_script(
         'slick-carousel',
         get_template_directory_uri() . '/assets/js/slick.min.js',
